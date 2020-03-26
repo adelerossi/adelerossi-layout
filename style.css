@@ -1,0 +1,83 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-size: 12px;
+  color: black;
+  font-family: serif;
+  background-color: #ffffff;
+}
+
+.wrapper {
+  box-shadow: 0px 0px 20px #888888;
+  /* per centrare il box grande*/
+  margin: 0 auto;
+  width: 900px;
+}
+
+header {
+  text-align: center;
+  text-transform: uppercase;
+  font-family: Arial, Helvetica, sans-serif;
+  position: relative;
+}
+
+nav {
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 10px;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 16pt;
+
+}
+
+.hero {
+  position: relative;
+
+}
+
+.quote {
+  /*position absolute il padre deve avere position relative*/
+  bottom: 25%;
+  right: 10%;
+  max-width: 50%;
+  padding-bottom: .5em;
+  /* per fare la riga*/
+  border-bottom: 2px solid #39b54a;
+
+  font-size: 32pt;
+  font-style: italic;
+  
+}
+
+.quote-author {
+  position: absolute;
+  bottom: calc(25% - 1em);
+  right: 10%;
+  max-width: 50%;
+  padding: .5em;
+  background-color:#f1f1f1;
+  text-align: left;
+}
+
+.hero p {
+
+  /* tocca margine sinistra della section 
+  margin-left: 400;*/
+
+  position: absolute;
+  bottom: calc(25% - 1em);
+  right: 10%;
+  max-width: 50%;
+  padding: .5em;
+  background-color:#f1f1f1;
+}
+
+h2.rules {
+  font-size: 16px;
+}
+
+p.rules {
+  font-size: 24px;
+}
