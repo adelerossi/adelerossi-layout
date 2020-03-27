@@ -1,8 +1,10 @@
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 body {
-  font-size: 12px;
+  font-size: 0.75em;
   color: black;
   font-family: serif;
   background-color: #ffffff;
@@ -12,7 +14,8 @@ body {
   box-shadow: 0px 0px 20px #888888;
   /* per centrare il box grande*/
   margin: 0 auto;
-  width: 900px;
+  max-width: 900px;
+  margin-top: -10px;
 }
 
 header {
@@ -28,7 +31,7 @@ nav {
   top: 0;
   padding: 10px;
   font-family: 'Times New Roman', Times, serif;
-  font-size: 16pt;
+  font-size: 24px;
 
 }
 
@@ -76,8 +79,135 @@ nav {
 
 h2.rules {
   font-size: 16px;
+  margin: ;
 }
 
 p.rules {
   font-size: 24px;
+}
+
+article {
+  /* min-height: 510px; */
+  padding-top: 3em;
+
+  margin: 10px 20px 0 20px;
+
+  padding: 12%;
+  position: relative;
+}
+
+.article-number {
+  font-weight: bold;
+  color: white;
+  
+  font-size: 1.6em;
+  text-align: center;
+  line-height: 1.8em;
+  
+  width: 1.8em;
+  height: 1.8em;
+  border-radius: 50%;
+
+  position: absolute;
+  left:0;
+}
+
+.article-title {
+  position: relative;
+  left: 0;
+  max-width: 50%;
+}
+
+.article-description {
+  max-width: 60%;
+  position: relative;
+  left: 0;
+  font-weight: normal;
+}
+
+/* ---- article 1 */
+
+.article-one {
+  background-image: url(img/product-01.png);
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+.article-number-1 {
+  background-color:#ffcc00;
+  top: 100px;
+}
+
+
+/* ---- article 2 */
+
+.article-two {
+  background-image: url(img/product-02.png);
+  background-repeat: no-repeat;
+  background-position: left;
+}
+
+.article-number-2 {
+  background-color:#e8420d;
+  left: 400px;
+}
+
+.article-title-2 {
+  max-width: 55%;
+  position: relative;
+  top: 20px;
+  left: 365px;
+  margin: 0;
+}
+
+.article-description-2 {
+  max-width: 60%;
+  position: relative;
+  left: 365px;
+  top: 30px;
+  font-weight: normal;
+}
+
+/* ---- article 3 */
+
+.article-three {
+  background-image: url(img/product-03.png);
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+.article-number-3 {
+  background-color:#c92424;
+  top: 100px;
+}
+
+/* -------------------- Footer */
+
+footer {
+  width: 100%;
+  background-color: #39b54a;
+  height: 400px;
+  color: white;
+  margin: 0;
+  position: relative;
+}
+
+.footer-content{
+  position: absolute;
+  left: 50%;
+  bottom: 20%;
+
+}
+.footer-quote {
+  max-width: 450px;
+  padding-bottom: .5em;
+  border-bottom: 2px solid #fff;
+}
+
+.footer-quote-author {
+  background-color: #39b54a;
+  padding: .5em;
+  position: relative;
+  left: 300px;
+  bottom:30px;
 }
